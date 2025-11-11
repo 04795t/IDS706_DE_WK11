@@ -86,6 +86,22 @@ pip install pyspark jupyter
 
 > **Note:** This project was ran locally since the dataset was too large to upload to Databricks. The notebook uses a local PySpark session with 8 GB memory and all CPU cores for distributed processing.
 
+
+> Due to file size limitations, the dataset is not included in this repository. Please download the dataset and place it in the `dataset/` folder before running the project.
+
+### Required Files:
+`dataset/2019-Oct.csv` (5.4 GB)
+
+### Download Instructions:
+1. Download the dataset from [Kaggle eCommerce Behavior Dataset](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store?resource=download&select=2019-Oct.csv)
+2. Create a `dataset/` folder in the project root if it doesn't exist:
+```bash
+   mkdir -p dataset
+```
+3. Place the downloaded `2019-Oct.csv` file in the `dataset/` folder
+
+> Note: The `dataset/` folder is included in `.gitignore` to prevent accidentally committing large files.
+
 ---
 
 ## Performance Analysis
